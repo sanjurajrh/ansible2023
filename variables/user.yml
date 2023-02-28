@@ -1,0 +1,15 @@
+---
+- name: Create the user account
+  hosts: dbserver
+  become: true
+  vars:
+    my_user: john
+  tasks:
+    - name: Create the account
+      ansible.builtin.user:
+        name: "{{ my_user }}"
+        state: present
+        password: '$6$GUeOAcF0BLw7Z6bm$wRustFbzcFuVUVIXlZ.KUU7nTW/IdQI0SiIvem4dEfrqLlVvG16tCijMAitteh7DzNLeFpi1i2xjFalsJZkgv.'
+        create_home: yes
+        update_password: on_create
+        shell: /bin/bash

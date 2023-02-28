@@ -1,0 +1,9 @@
+[webserver]
+serverb.lab.example.com
+
+[dbserver]
+serverc.lab.example.com
+
+
+[webserver:vars]
+my_var=telnet

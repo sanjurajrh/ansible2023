@@ -1,0 +1,9 @@
+---
+- name: collect the memory from the host
+  hosts: serverb.lab.example.com
+  gather_facts: yes
+  tasks:
+    - name: Create the systeminfo.txt file
+      ansible.builtin.copy:
+        content: "The system has {{ ansible_facts['memtotal_mb'] }} Mib of memory."
+        dest: /tmp/systeminfo.txt

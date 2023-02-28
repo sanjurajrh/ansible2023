@@ -1,0 +1,14 @@
+---
+- name: Using registered variables
+  hosts: webserver
+  become: true
+  tasks:
+    - name: check the status of the service
+      ansible.builtin.command:
+        cmd: systemctl status httpd
+      register: svc_status
+      ignore_errors: true
+    - name: Display the output
+      debug:
+        var: svc_status
+...

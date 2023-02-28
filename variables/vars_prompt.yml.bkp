@@ -1,0 +1,19 @@
+---
+- name: Using vars_prompt
+  hosts: webserver
+  become: true
+  vars_prompt:
+    - name: my_package
+      prompt: "Which package do you want to install? "
+      default: telnet
+      private: no
+  tasks:
+    - name: Install the {{ my_package }}
+      ansible.builtin.dnf:
+        name: "{{ my_package }}"
+        state: latest
+      register: pkg_status
+
+    - name: Display the result
+      ansible.builtin.debug:
+        var: pkg_status
