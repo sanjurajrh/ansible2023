@@ -1,0 +1,2 @@
+- src: http://serverd.lab.example.com/user.example.tar
+  name: user.example

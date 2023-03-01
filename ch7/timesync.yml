@@ -1,0 +1,11 @@
+---
+- name: Updating the time using NTP server
+  hosts: serverc.lab.example.com
+  become: true
+  vars:
+    timesync_ntp_servers:
+      - hostname: classroom.example.com
+        iburst: yes
+    timesync_ntp_provider: chrony
+  roles:
+    - redhat.rhel_system_roles.timesync

@@ -1,0 +1,14 @@
+---
+- name: Prepare the webserver
+  hosts: "{{ my_host | default('serverb.lab.example.com') }}"
+  tasks:
+    - name: Importing the playbooks for deployment
+      ansible.builtin.debug:
+        msg: "Start importing the other playbooks"
+- name: Import the playbook for webserver
+  import_playbook: web.yml
+- name: Import the security playbook
+  import_playbook: firewall.yml
+- name: Import the playbook to verify the access
+  import_playbook: test.yml
+...

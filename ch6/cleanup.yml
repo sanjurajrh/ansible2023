@@ -1,0 +1,22 @@
+---
+- name: Clean the environment
+  hosts: "{{ my_host | default('serverb.lab.example.com') }}"
+  become: true
+  tasks:
+    - name: Remove the directory 
+      ansible.builtin.file:
+        path: /var/www/html/index.html
+        state: absent
+
+    - name: Remove the package
+      ansible.builtin.dnf:
+        name: httpd
+        state: absent
+
+    - name: Closed the ports
+      ansible.posix.firewalld:
+        service: http
+        immediate: true
+        permanent: true
+        state: disabled
+...

@@ -1,0 +1,24 @@
+---
+- name: Configure the DNF/YUM repositories
+  hosts: serverc.lab.example.com
+  become: true
+  tasks:
+  - name: Ensure the Base repo is present
+    ansible.builtin.yum_repository:
+      file: base
+      name: BaseOS
+      description: Base OS packages
+      baseurl: http://content.example.com/rhel9.0/x86_64/dvd/BaseOS
+      enabled: yes
+      gpgcheck: no
+      state: present
+
+  - name: Ensure the AppStream repo exists
+    ansible.builtin.yum_repository:
+      file: appstream
+      name: AppStream
+      description: AppStream Package Repository
+      baseurl: http://content.example.com/rhel9.0/x86_64/dvd/AppStream
+      enabled: yes
+      gpgcheck: no
+      state: present

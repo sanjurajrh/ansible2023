@@ -1,0 +1,8 @@
+---
+- name: Using the role
+  hosts: "{{ my_host | default('serverb.lab.example.com') }}"
+  become: true
+  tasks:
+    - name: Ensure the motd file is updated
+      include_role: 
+        name: student.mycollection.mymotd

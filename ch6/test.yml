@@ -1,0 +1,17 @@
+---
+- name: Test the access to the webserver
+  hosts: localhost
+  become: false
+  tasks:
+    - name: Verify the access
+      ansible.builtin.uri:
+        url: "http://{{ my_host | default('serverb.lab.example.com') }}"
+        return_content: yes
+        status_code: 200
+      register: site_status
+    
+    - name: Display the specific output
+      ansible.builtin.debug:
+        var: site_status.content
+...
+

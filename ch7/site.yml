@@ -1,0 +1,6 @@
+---
+- name: Using the role
+  hosts: "{{ my_host | default('serverb.lab.example.com') }}"
+  become: true
+  roles:
+    - user.example

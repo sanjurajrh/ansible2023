@@ -1,0 +1,12 @@
+---
+- name: Cron job for user devops
+  hosts: serverb.lab.example.com
+  become: true
+  tasks:
+    - name: Create a cron job to execute a task every 2 minutes 
+      ansible.builtin.cron:
+        name: "Monitoring in progress"
+        minute: "*/2"
+        hour: "*"
+        job: "/usr/bin/logger Task is in progress"
+        user: devops

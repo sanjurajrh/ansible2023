@@ -1,0 +1,7 @@
+---
+- name: Closed the ports
+  ansible.posix.firewalld:
+    service: http
+    immediate: true
+    permanent: true
+    state: disabled

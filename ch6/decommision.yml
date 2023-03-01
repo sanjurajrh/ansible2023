@@ -1,0 +1,9 @@
+---
+- name: Clean the environment
+  hosts: "{{ my_host | default('serverb.lab.example.com') }}"
+  become: true
+  tasks:
+    - include_tasks: directory_removal_tasks.yml
+    - import_tasks: package_removal_tasks.yml
+    - import_tasks: restore_firewall_settings.yml
+

@@ -1,0 +1,21 @@
+---
+- name: Deploy the webserver
+  hosts: "{{ my_host | default('serverb.lab.example.com') }}"
+  become: true
+  tasks:
+    - name: Install the required packages
+      ansible.builtin.dnf:
+        name: httpd
+        state: latest
+
+    - name: Content to serve
+      ansible.builtin.copy:
+        content: "Welcome to {{ ansible_facts['fqdn'] }}\n"
+        dest: /var/www/html/index.html
+
+    - name: Start and enable the service
+      ansible.builtin.service:
+        name: httpd
+        state: started
+        enabled: true
+...

@@ -1,0 +1,13 @@
+---
+- name: Create a partition
+  hosts: serverb.lab.example.com
+  become: true
+  roles:
+  - name: redhat.rhel_system_roles.storage
+    storage_volumes:
+      - name: extradisk
+        type: disk
+        disks:
+          - /dev/vdb
+        fstype: xfs
+        mount_point: /opt/extra
