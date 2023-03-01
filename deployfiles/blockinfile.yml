@@ -1,0 +1,16 @@
+---
+- name: Add block of text to test file
+  hosts: server
+  tasks:
+    - name: file creation
+      ansible.builtin.file:
+        path: /tmp/test
+        state: touch
+    - name: Add a block of text to an existing file
+      ansible.builtin.blockinfile:
+        path: /tmp/test
+        block: |
+          After the RH294 Training
+          You can go with the EX294 Certification.
+        state: present
+

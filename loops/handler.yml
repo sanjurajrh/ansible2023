@@ -1,0 +1,28 @@
+---
+- name: Handler
+  hosts: serverc.lab.example.com
+  become: true
+  tasks:
+    - name: Install the package
+      notify: 
+        - Restart apache
+      ansible.builtin.dnf:
+        name: httpd
+        state: latest
+      register: pkg_status
+    - name: Error task
+      ansible.builtin.debug:
+        msg: "This is a invalid task {{ my_var }}"
+      ignore_errors: yes
+    - name: Print the status of the package
+      when: pkg_status.rc == 0
+      ansible.builtin.debug:
+        msg: "Package exists" 
+  handlers:
+    - name: Restart apache
+      ansible.builtin.service:
+        name: httpd
+        state: restarted
+        enabled: true
+
+

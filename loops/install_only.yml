@@ -1,0 +1,17 @@
+---
+- name: Install the package based on condition
+  hosts: all
+  become: true
+  tasks:
+    - name: Install the package
+      ansible.builtin.dnf:
+        name: httpd
+        state: latest
+      when: 
+      - ansible_facts['memfree_mb'] > 470 or ansible_facts['distribution'] == "RedHat"   # Logical Or
+
+
+      # 
+      # - ansible_facts['memfree_mb'] > 470 
+      # - ansible_facts['distribution'] == "RedHat"   # Logical AND
+

@@ -1,0 +1,14 @@
+---
+- name: Install the required softwares
+  hosts: serverc.lab.example.com
+  become: true
+  tasks:
+  - name: Install the packages
+    loop:                         # Not recommended
+      - pkg1 
+      - pkg2
+    ansible.builtin.dnf:
+      name:                   # Recommended
+        - pkg1
+        - pkg2
+      state: latest

@@ -1,0 +1,12 @@
+---
+- name: Using the boolean to decide the action
+  hosts: all
+  become: true
+  vars:
+    my_task: true
+  tasks:
+    - name: Install the required packages
+      ansible.builtin.dnf:
+        name: vsftpd
+        state: latest
+      when: my_task

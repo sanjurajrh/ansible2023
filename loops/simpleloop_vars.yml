@@ -1,0 +1,15 @@
+---
+- name: Using simple loop
+  hosts: all
+  become: true
+  vars:
+    my_services:
+    - crond
+    - atd
+  tasks:
+    - name: Service update
+      loop: "{{ my_services }}"
+      ansible.builtin.service:
+        name: "{{ item }}"
+        state: restarted
+...

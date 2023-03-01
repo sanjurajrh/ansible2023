@@ -1,0 +1,12 @@
+---
+- name: Create the MOTD
+  hosts: all
+  become: true
+  tasks:
+  - name: Creation of /etc/motd file using template module
+    ansible.builtin.template:
+      src: index.j2
+      dest: /etc/motd
+      owner: root
+      group: root
+      mode: 0644

@@ -1,0 +1,334 @@
+Feb 27 20:12:38 serverd polkitd[725]: Loading rules from directory /etc/polkit-1/rules.d
+Feb 27 20:12:38 serverd polkitd[725]: Loading rules from directory /usr/share/polkit-1/rules.d
+Feb 27 20:12:38 serverd polkitd[725]: Finished loading, compiling and executing 4 rules
+Feb 27 20:12:38 serverd polkitd[725]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Feb 27 20:12:39 serverd sshd[752]: Server listening on 0.0.0.0 port 22.
+Feb 27 20:12:39 serverd sshd[752]: Server listening on :: port 22.
+Feb 28 01:39:57 serverd sshd[1124]: Accepted publickey for student from 172.25.250.9 port 59450 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Feb 28 01:39:57 serverd systemd[1128]: pam_unix(systemd-user:session): session opened for user student(uid=1000) by (uid=0)
+Feb 28 01:39:57 serverd sshd[1124]: pam_unix(sshd:session): session opened for user student(uid=1000) by (uid=0)
+Feb 28 01:41:59 serverd sshd[1139]: Received disconnect from 172.25.250.9 port 59450:11: disconnected by user
+Feb 28 01:41:59 serverd sshd[1139]: Disconnected from user student 172.25.250.9 port 59450
+Feb 28 01:41:59 serverd sshd[1124]: pam_unix(sshd:session): session closed for user student
+Feb 28 01:45:19 serverd sshd[1503]: Accepted publickey for student from 172.25.250.9 port 59452 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Feb 28 01:45:19 serverd systemd[1508]: pam_unix(systemd-user:session): session opened for user student(uid=1000) by (uid=0)
+Feb 28 01:45:20 serverd sshd[1503]: pam_unix(sshd:session): session opened for user student(uid=1000) by (uid=0)
+Feb 28 01:45:37 serverd sshd[1643]: Accepted publickey for devops from 172.25.250.9 port 59454 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Feb 28 01:45:37 serverd systemd[1647]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Feb 28 01:45:37 serverd sshd[1643]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Feb 28 01:45:49 serverd sudo[1881]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ggnqairapgdoqydscbkluneeolifmoei ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677566749.3396194-8118-158729415183674/AnsiballZ_dnf.py
+Feb 28 01:45:49 serverd sudo[1881]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Feb 28 01:45:51 serverd groupadd[1890]: group added to /etc/group: name=apache, GID=48
+Feb 28 01:45:51 serverd groupadd[1890]: group added to /etc/gshadow: name=apache
+Feb 28 01:45:51 serverd groupadd[1890]: new group: name=apache, GID=48
+Feb 28 01:45:51 serverd useradd[1897]: new user: name=apache, UID=48, GID=48, home=/usr/share/httpd, shell=/sbin/nologin, from=none
+Feb 28 01:45:53 serverd sudo[1881]: pam_unix(sudo:session): session closed for user root
+Feb 28 01:46:39 serverd sudo[27050]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-gjnpiyvcydtrgczpfbmkkkqkwjxyvboz ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677566799.0805383-8234-157992033290325/AnsiballZ_dnf.py
+Feb 28 01:46:39 serverd sudo[27050]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Feb 28 01:46:41 serverd sudo[27050]: pam_unix(sudo:session): session closed for user root
+Feb 28 01:47:41 serverd sshd[1656]: Received disconnect from 172.25.250.9 port 59454:11: disconnected by user
+Feb 28 01:47:41 serverd sshd[1656]: Disconnected from user devops 172.25.250.9 port 59454
+Feb 28 01:47:41 serverd sshd[1643]: pam_unix(sshd:session): session closed for user devops
+Feb 28 01:47:46 serverd sshd[1517]: Received disconnect from 172.25.250.9 port 59452:11: disconnected by user
+Feb 28 01:47:46 serverd sshd[1517]: Disconnected from user student 172.25.250.9 port 59452
+Feb 28 01:47:46 serverd sshd[1503]: pam_unix(sshd:session): session closed for user student
+Feb 28 19:43:21 serverd polkitd[721]: Loading rules from directory /etc/polkit-1/rules.d
+Feb 28 19:43:21 serverd polkitd[721]: Loading rules from directory /usr/share/polkit-1/rules.d
+Feb 28 19:43:21 serverd polkitd[721]: Finished loading, compiling and executing 4 rules
+Feb 28 19:43:21 serverd polkitd[721]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Feb 28 19:43:21 serverd sshd[759]: Server listening on 0.0.0.0 port 22.
+Feb 28 19:43:21 serverd sshd[759]: Server listening on :: port 22.
+Mar  1 01:02:20 serverd sshd[1148]: Accepted publickey for devops from 172.25.250.9 port 44636 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 01:02:20 serverd systemd[1152]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 01:02:21 serverd sshd[1148]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 01:02:21 serverd sudo[1268]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-anamtuaahxhowbsyljmcnycahaoeamek ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677650541.160715-5330-200638886452393/AnsiballZ_command.py
+Mar  1 01:02:21 serverd sudo[1268]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 01:02:21 serverd sudo[1268]: pam_unix(sudo:session): session closed for user root
+Mar  1 01:02:31 serverd sudo[1390]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-cjidtutvunarsjfypjvdccqcmkskikcf ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677650551.1939056-5374-216663544747923/AnsiballZ_command.py
+Mar  1 01:02:31 serverd sudo[1390]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 01:02:31 serverd sudo[1390]: pam_unix(sudo:session): session closed for user root
+Mar  1 01:02:52 serverd sudo[1512]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-roemqdjycphmvtklynmvwnhoiwrosmxz ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677650572.1010368-5406-148326247398590/AnsiballZ_command.py
+Mar  1 01:02:52 serverd sudo[1512]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 01:02:52 serverd sudo[1512]: pam_unix(sudo:session): session closed for user root
+Mar  1 01:03:41 serverd sshd[1530]: Accepted publickey for devops from 172.25.250.9 port 44638 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 01:03:41 serverd sshd[1530]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 01:03:42 serverd sudo[1638]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-maqnyfocpdvpxuqdteapsxvmyenlwmig ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677650621.959339-26-248903586752874/AnsiballZ_setup.py
+Mar  1 01:03:42 serverd sudo[1638]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 01:03:43 serverd sudo[1638]: pam_unix(sudo:session): session closed for user root
+Mar  1 01:03:43 serverd sudo[1761]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-lakyjexyanpdlybskfwfeavmvquagpsr ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677650623.3796003-54-111142848272601/AnsiballZ_systemd.py
+Mar  1 01:03:43 serverd sudo[1761]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 01:03:44 serverd sudo[1761]: pam_unix(sudo:session): session closed for user root
+Mar  1 01:03:44 serverd sudo[1857]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-tbpfezgkkgwzemcjgzsodkxwlgvzwrqv ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677650624.1676695-54-221164827574953/AnsiballZ_systemd.py
+Mar  1 01:03:44 serverd sudo[1857]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 01:03:44 serverd sudo[1857]: pam_unix(sudo:session): session closed for user root
+Mar  1 01:03:44 serverd sshd[1530]: pam_unix(sshd:session): session closed for user devops
+Mar  1 01:03:52 serverd sshd[1163]: Received disconnect from 172.25.250.9 port 44636:11: disconnected by user
+Mar  1 01:03:52 serverd sshd[1163]: Disconnected from user devops 172.25.250.9 port 44636
+Mar  1 01:03:52 serverd sshd[1148]: pam_unix(sshd:session): session closed for user devops
+Mar  1 01:04:07 serverd sshd[1881]: Invalid user devop from 172.25.250.9 port 44642
+Mar  1 01:04:07 serverd sshd[1881]: Connection closed by invalid user devop 172.25.250.9 port 44642 [preauth]
+Mar  1 01:04:13 serverd sshd[1883]: Accepted publickey for devops from 172.25.250.9 port 44644 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 01:04:13 serverd systemd[1887]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 01:04:13 serverd sshd[1883]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 01:04:13 serverd sudo[2001]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-efzdntefxdnujxdawrqehzuekmjewrod ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677650653.2596452-5675-64028897786758/AnsiballZ_command.py
+Mar  1 01:04:13 serverd sudo[2001]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 01:04:13 serverd sudo[2001]: pam_unix(sudo:session): session closed for user root
+Mar  1 01:05:13 serverd sshd[1896]: Received disconnect from 172.25.250.9 port 44644:11: disconnected by user
+Mar  1 01:05:13 serverd sshd[1896]: Disconnected from user devops 172.25.250.9 port 44644
+Mar  1 01:05:13 serverd sshd[1883]: pam_unix(sshd:session): session closed for user devops
+Mar  1 01:07:29 serverd sshd[2020]: Accepted publickey for devops from 172.25.250.9 port 44646 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 01:07:29 serverd systemd[2024]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 01:07:29 serverd sshd[2020]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 01:07:30 serverd sudo[2138]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ykxmqxafzassqrjuivsnmapiuuguafph ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677650850.0035-26-150201002568041/AnsiballZ_setup.py
+Mar  1 01:07:30 serverd sudo[2138]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 01:07:31 serverd sudo[2138]: pam_unix(sudo:session): session closed for user root
+Mar  1 01:07:31 serverd sudo[2261]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-wyctjzhvngzwwrbnrivpgkzklfdnerjt ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677650851.4083061-54-197190963754764/AnsiballZ_systemd.py
+Mar  1 01:07:31 serverd sudo[2261]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 01:07:32 serverd sudo[2261]: pam_unix(sudo:session): session closed for user root
+Mar  1 01:07:32 serverd sudo[2357]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-urntnlsssjsmmrdinvwjhouofdjxofnz ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677650852.2076905-54-234688722111880/AnsiballZ_systemd.py
+Mar  1 01:07:32 serverd sudo[2357]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 01:07:32 serverd sudo[2357]: pam_unix(sudo:session): session closed for user root
+Mar  1 01:07:32 serverd sshd[2020]: pam_unix(sshd:session): session closed for user devops
+Mar  1 01:27:55 serverd sshd[2380]: Accepted publickey for devops from 172.25.250.9 port 44648 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 01:27:56 serverd systemd[2384]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 01:27:56 serverd sshd[2380]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 01:28:38 serverd sshd[2636]: Accepted publickey for devops from 172.25.250.9 port 44650 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 01:28:38 serverd sshd[2636]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 01:28:38 serverd sudo[2744]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-dfihimgtntyhuefhnttradzrzpegmzfm ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677652118.204163-26-85938833036302/AnsiballZ_setup.py
+Mar  1 01:28:38 serverd sudo[2744]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 01:28:39 serverd sudo[2744]: pam_unix(sudo:session): session closed for user root
+Mar  1 01:28:39 serverd sudo[2867]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-kbrcfaostectrhjlvidhvlndinhhszox ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677652119.5253613-54-19063167826912/AnsiballZ_user.py
+Mar  1 01:28:39 serverd sudo[2867]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 01:28:40 serverd sudo[2867]: pam_unix(sudo:session): session closed for user root
+Mar  1 01:28:40 serverd sudo[2959]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-pwnowbdwoazxcczpcckpscysxkvjaaou ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677652120.1345742-54-101573729669745/AnsiballZ_user.py
+Mar  1 01:28:40 serverd sudo[2959]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 01:28:40 serverd sudo[2959]: pam_unix(sudo:session): session closed for user root
+Mar  1 01:28:40 serverd sshd[2636]: pam_unix(sshd:session): session closed for user devops
+Mar  1 01:29:09 serverd sshd[2395]: Received disconnect from 172.25.250.9 port 44648:11: disconnected by user
+Mar  1 01:29:09 serverd sshd[2395]: Disconnected from user devops 172.25.250.9 port 44648
+Mar  1 01:29:09 serverd sshd[2380]: pam_unix(sshd:session): session closed for user devops
+Mar  1 01:29:11 serverd sshd[2977]: Accepted publickey for devops from 172.25.250.9 port 44652 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 01:29:11 serverd sshd[2977]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 01:29:11 serverd sudo[3085]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-yekxgsqboimaoykfhaazdlsnhvifpgdl ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677652151.28041-26-280876330115690/AnsiballZ_setup.py
+Mar  1 01:29:11 serverd sudo[3085]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 01:29:12 serverd sudo[3085]: pam_unix(sudo:session): session closed for user root
+Mar  1 01:29:12 serverd sudo[3208]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-cddkletxwbqovmcudrtaxavmkqzeeynn ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677652152.621724-54-279770218847655/AnsiballZ_user.py
+Mar  1 01:29:12 serverd sudo[3208]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 01:29:13 serverd useradd[3211]: new group: name=alice, GID=3001
+Mar  1 01:29:13 serverd useradd[3211]: new user: name=alice, UID=3001, GID=3001, home=/home/alice, shell=/bin/bash, from=/dev/pts/0
+Mar  1 01:29:13 serverd sudo[3208]: pam_unix(sudo:session): session closed for user root
+Mar  1 01:29:13 serverd sudo[3307]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-rbzgwzjqfylzvcrjylbobfysnbhsppxm ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677652153.3507524-54-95392329561252/AnsiballZ_user.py
+Mar  1 01:29:13 serverd sudo[3307]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 01:29:13 serverd useradd[3310]: new group: name=bob, GID=3002
+Mar  1 01:29:13 serverd useradd[3310]: new user: name=bob, UID=3002, GID=3002, home=/home/bob, shell=/bin/bash, from=/dev/pts/0
+Mar  1 01:29:13 serverd sudo[3307]: pam_unix(sudo:session): session closed for user root
+Mar  1 01:29:13 serverd sshd[2977]: pam_unix(sshd:session): session closed for user devops
+Mar  1 01:29:24 serverd sshd[3331]: Accepted publickey for devops from 172.25.250.9 port 44654 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 01:29:24 serverd sshd[3331]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 01:30:32 serverd sshd[3334]: Received disconnect from 172.25.250.9 port 44654:11: disconnected by user
+Mar  1 01:30:32 serverd sshd[3334]: Disconnected from user devops 172.25.250.9 port 44654
+Mar  1 01:30:32 serverd sshd[3331]: pam_unix(sshd:session): session closed for user devops
+Mar  1 01:35:31 serverd sshd[3577]: Accepted publickey for devops from 172.25.250.9 port 44656 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 01:35:31 serverd systemd[3581]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 01:35:31 serverd sshd[3577]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 01:36:39 serverd sshd[3590]: Received disconnect from 172.25.250.9 port 44656:11: disconnected by user
+Mar  1 01:36:39 serverd sshd[3590]: Disconnected from user devops 172.25.250.9 port 44656
+Mar  1 01:36:39 serverd sshd[3577]: pam_unix(sshd:session): session closed for user devops
+Mar  1 01:43:35 serverd sshd[3834]: Accepted publickey for devops from 172.25.250.9 port 44658 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 01:43:35 serverd systemd[3838]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 01:43:35 serverd sshd[3834]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 01:43:36 serverd sshd[3834]: pam_unix(sshd:session): session closed for user devops
+Mar  1 01:49:12 serverd sshd[4064]: Accepted publickey for devops from 172.25.250.9 port 44660 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 01:49:12 serverd systemd[4068]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 01:49:12 serverd sshd[4064]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 01:49:13 serverd sshd[4064]: pam_unix(sshd:session): session closed for user devops
+Mar  1 01:56:03 serverd sshd[4294]: Accepted publickey for devops from 172.25.250.9 port 44662 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 01:56:03 serverd systemd[4298]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 01:56:03 serverd sshd[4294]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 01:57:03 serverd sshd[4431]: Accepted publickey for devops from 172.25.250.9 port 44664 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 01:57:03 serverd sshd[4431]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 01:57:03 serverd sudo[4539]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-jvbevifrfitorbuasvyescoqagfqjfnf ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677653823.143826-26-142328928945756/AnsiballZ_setup.py
+Mar  1 01:57:03 serverd sudo[4539]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 01:57:04 serverd sudo[4539]: pam_unix(sudo:session): session closed for user root
+Mar  1 01:57:04 serverd sshd[4431]: pam_unix(sshd:session): session closed for user devops
+Mar  1 01:57:04 serverd sshd[4310]: Received disconnect from 172.25.250.9 port 44662:11: disconnected by user
+Mar  1 01:57:04 serverd sshd[4310]: Disconnected from user devops 172.25.250.9 port 44662
+Mar  1 01:57:04 serverd sshd[4294]: pam_unix(sshd:session): session closed for user devops
+Mar  1 01:57:55 serverd sshd[4589]: Accepted publickey for devops from 172.25.250.9 port 44666 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 01:57:55 serverd systemd[4593]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 01:57:55 serverd sshd[4589]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 01:57:55 serverd sudo[4707]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-wbztmgyytfaapitlgxfhrijxmmaryugj ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677653875.2107809-26-193868837811669/AnsiballZ_setup.py
+Mar  1 01:57:55 serverd sudo[4707]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 01:57:56 serverd sudo[4707]: pam_unix(sudo:session): session closed for user root
+Mar  1 01:57:56 serverd sudo[4830]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-wicndofvgajdokdsdafahbpttmimogji ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677653876.5406134-54-147957513436015/AnsiballZ_dnf.py
+Mar  1 01:57:56 serverd sudo[4830]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 01:57:59 serverd sudo[4830]: pam_unix(sudo:session): session closed for user root
+Mar  1 01:57:59 serverd sshd[4589]: pam_unix(sshd:session): session closed for user devops
+Mar  1 01:58:06 serverd sshd[4992]: Accepted publickey for devops from 172.25.250.9 port 44668 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 01:58:07 serverd sshd[4992]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 01:59:07 serverd sshd[4995]: Received disconnect from 172.25.250.9 port 44668:11: disconnected by user
+Mar  1 01:59:07 serverd sshd[4995]: Disconnected from user devops 172.25.250.9 port 44668
+Mar  1 01:59:07 serverd sshd[4992]: pam_unix(sshd:session): session closed for user devops
+Mar  1 02:51:21 serverd sshd[5138]: Accepted publickey for devops from 172.25.250.9 port 44670 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 02:51:21 serverd systemd[5142]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 02:51:21 serverd sshd[5138]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 02:53:06 serverd sshd[5396]: Accepted publickey for devops from 172.25.250.9 port 44672 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 02:53:06 serverd sshd[5396]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 02:53:06 serverd sudo[5504]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-runmyvmoagascpicjykeobhkdxsxivas ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677657186.2331564-26-154883224496831/AnsiballZ_setup.py
+Mar  1 02:53:06 serverd sudo[5504]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 02:53:06 serverd sshd[5153]: Received disconnect from 172.25.250.9 port 44670:11: disconnected by user
+Mar  1 02:53:06 serverd sshd[5153]: Disconnected from user devops 172.25.250.9 port 44670
+Mar  1 02:53:06 serverd sshd[5138]: pam_unix(sshd:session): session closed for user devops
+Mar  1 02:53:07 serverd sudo[5504]: pam_unix(sudo:session): session closed for user root
+Mar  1 02:53:07 serverd sudo[5627]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ixzurfkrhnmtcrmxxmrqoaxqleavituf ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677657187.5590916-54-146661090484831/AnsiballZ_command.py
+Mar  1 02:53:07 serverd sudo[5627]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 02:53:08 serverd sudo[5627]: pam_unix(sudo:session): session closed for user root
+Mar  1 02:53:08 serverd sshd[5396]: pam_unix(sshd:session): session closed for user devops
+Mar  1 02:54:24 serverd sshd[5647]: Accepted publickey for devops from 172.25.250.9 port 44674 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 02:54:24 serverd systemd[5651]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 02:54:24 serverd sshd[5647]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 02:54:25 serverd sudo[5765]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-zleehczxdbuzxtgwtlqggyrdzikbtdqm ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677657264.5241146-26-58933329040620/AnsiballZ_setup.py
+Mar  1 02:54:25 serverd sudo[5765]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 02:54:25 serverd sudo[5765]: pam_unix(sudo:session): session closed for user root
+Mar  1 02:54:26 serverd sudo[5888]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-mvasatmyhqiarkhtzihbcxpnylhzgsos ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677657265.8622296-54-133550108271693/AnsiballZ_command.py
+Mar  1 02:54:26 serverd sudo[5888]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 02:54:26 serverd sudo[5888]: pam_unix(sudo:session): session closed for user root
+Mar  1 02:54:26 serverd sudo[5981]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-gmxvhclurrbqhnqwmftphjsvzerzxazo ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677657266.63968-76-135060926104045/AnsiballZ_dnf.py
+Mar  1 02:54:26 serverd sudo[5981]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 02:54:27 serverd sudo[5981]: pam_unix(sudo:session): session closed for user root
+Mar  1 02:54:28 serverd sshd[5647]: pam_unix(sshd:session): session closed for user devops
+Mar  1 02:59:28 serverd sshd[6001]: Accepted publickey for devops from 172.25.250.9 port 44676 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 02:59:28 serverd systemd[6005]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 02:59:28 serverd sshd[6001]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 03:00:30 serverd sshd[6015]: Received disconnect from 172.25.250.9 port 44676:11: disconnected by user
+Mar  1 03:00:30 serverd sshd[6015]: Disconnected from user devops 172.25.250.9 port 44676
+Mar  1 03:00:30 serverd sshd[6001]: pam_unix(sshd:session): session closed for user devops
+Mar  1 03:01:14 serverd sshd[6181]: Accepted publickey for devops from 172.25.250.9 port 44678 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 03:01:14 serverd systemd[6185]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 03:01:14 serverd sshd[6181]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 03:02:26 serverd sshd[6194]: Received disconnect from 172.25.250.9 port 44678:11: disconnected by user
+Mar  1 03:02:26 serverd sshd[6194]: Disconnected from user devops 172.25.250.9 port 44678
+Mar  1 03:02:26 serverd sshd[6181]: pam_unix(sshd:session): session closed for user devops
+Mar  1 03:02:32 serverd sshd[6463]: Accepted publickey for devops from 172.25.250.9 port 44680 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 03:02:32 serverd sshd[6463]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 03:02:33 serverd sudo[6571]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-yjhcskabjgljrwldrphksdrnjmotvcgp ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677657752.6393561-26-83408324041415/AnsiballZ_setup.py
+Mar  1 03:02:33 serverd sudo[6571]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 03:02:33 serverd sudo[6571]: pam_unix(sudo:session): session closed for user root
+Mar  1 03:02:34 serverd sudo[6694]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-myoiuceioyvwzcaoxvcdzdpjflmulvzl ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677657754.0140996-54-278311354554575/AnsiballZ_dnf.py
+Mar  1 03:02:34 serverd sudo[6694]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 03:02:36 serverd sudo[6694]: pam_unix(sudo:session): session closed for user root
+Mar  1 03:02:36 serverd sshd[6463]: pam_unix(sshd:session): session closed for user devops
+Mar  1 03:02:47 serverd sshd[6899]: Accepted publickey for devops from 172.25.250.9 port 44682 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 03:02:47 serverd systemd[6903]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 03:02:47 serverd sshd[6899]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 03:03:48 serverd sshd[6912]: Received disconnect from 172.25.250.9 port 44682:11: disconnected by user
+Mar  1 03:03:48 serverd sshd[6912]: Disconnected from user devops 172.25.250.9 port 44682
+Mar  1 03:03:48 serverd sshd[6899]: pam_unix(sshd:session): session closed for user devops
+Mar  1 03:13:29 serverd sshd[7062]: Accepted publickey for devops from 172.25.250.9 port 44684 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 03:13:29 serverd systemd[7066]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 03:13:30 serverd sshd[7062]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 03:14:30 serverd sshd[7077]: Received disconnect from 172.25.250.9 port 44684:11: disconnected by user
+Mar  1 03:14:30 serverd sshd[7077]: Disconnected from user devops 172.25.250.9 port 44684
+Mar  1 03:14:30 serverd sshd[7062]: pam_unix(sshd:session): session closed for user devops
+Mar  1 05:13:12 serverd sshd[7239]: Accepted publickey for devops from 172.25.250.9 port 44686 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 05:13:12 serverd systemd[7243]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:13:12 serverd sshd[7239]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:14:13 serverd sshd[7254]: Received disconnect from 172.25.250.9 port 44686:11: disconnected by user
+Mar  1 05:14:13 serverd sshd[7254]: Disconnected from user devops 172.25.250.9 port 44686
+Mar  1 05:14:13 serverd sshd[7239]: pam_unix(sshd:session): session closed for user devops
+Mar  1 05:14:35 serverd sshd[7406]: Accepted publickey for devops from 172.25.250.9 port 44688 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 05:14:35 serverd systemd[7410]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:14:35 serverd sshd[7406]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:15:36 serverd sshd[7419]: Received disconnect from 172.25.250.9 port 44688:11: disconnected by user
+Mar  1 05:15:36 serverd sshd[7419]: Disconnected from user devops 172.25.250.9 port 44688
+Mar  1 05:15:36 serverd sshd[7406]: pam_unix(sshd:session): session closed for user devops
+Mar  1 05:28:31 serverd sshd[7569]: Accepted publickey for devops from 172.25.250.9 port 44690 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 05:28:31 serverd systemd[7574]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:28:31 serverd sshd[7569]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:28:33 serverd sshd[7569]: pam_unix(sshd:session): session closed for user devops
+Mar  1 05:31:23 serverd sshd[7827]: Accepted publickey for devops from 172.25.250.9 port 44692 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 05:31:23 serverd systemd[7831]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:31:23 serverd sshd[7827]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:31:25 serverd sshd[7827]: pam_unix(sshd:session): session closed for user devops
+Mar  1 05:31:45 serverd sshd[8080]: Accepted publickey for devops from 172.25.250.9 port 44694 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 05:31:45 serverd systemd[8085]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:31:45 serverd sshd[8080]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:31:47 serverd sshd[8080]: pam_unix(sshd:session): session closed for user devops
+Mar  1 05:31:57 serverd sshd[8423]: Accepted publickey for devops from 172.25.250.9 port 44696 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 05:31:57 serverd sshd[8423]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:32:58 serverd sshd[8426]: Received disconnect from 172.25.250.9 port 44696:11: disconnected by user
+Mar  1 05:32:58 serverd sshd[8426]: Disconnected from user devops 172.25.250.9 port 44696
+Mar  1 05:32:58 serverd sshd[8423]: pam_unix(sshd:session): session closed for user devops
+Mar  1 05:36:47 serverd sshd[8548]: Accepted publickey for devops from 172.25.250.9 port 44698 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 05:36:47 serverd systemd[8552]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:36:47 serverd sshd[8548]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:36:50 serverd sshd[8548]: pam_unix(sshd:session): session closed for user devops
+Mar  1 05:37:08 serverd sshd[8874]: Accepted publickey for devops from 172.25.250.9 port 44700 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 05:37:08 serverd systemd[8878]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:37:08 serverd sshd[8874]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:38:20 serverd sshd[8887]: Received disconnect from 172.25.250.9 port 44700:11: disconnected by user
+Mar  1 05:38:20 serverd sshd[8887]: Disconnected from user devops 172.25.250.9 port 44700
+Mar  1 05:38:20 serverd sshd[8874]: pam_unix(sshd:session): session closed for user devops
+Mar  1 05:39:38 serverd sshd[9129]: Accepted publickey for devops from 172.25.250.9 port 44702 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 05:39:38 serverd systemd[9133]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:39:38 serverd sshd[9129]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:39:39 serverd sudo[9247]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-vprcnpnfrpkjbcikyxwlboxyczeqyser ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677667178.584952-25-111666814176580/AnsiballZ_setup.py
+Mar  1 05:39:39 serverd sudo[9247]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 05:39:39 serverd sudo[9247]: pam_unix(sudo:session): session closed for user root
+Mar  1 05:39:40 serverd sudo[9370]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-fewoyinbexiozdnvowugplbnzzwmzsml ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677667179.8346827-39-176760450919976/AnsiballZ_file.py
+Mar  1 05:39:40 serverd sudo[9370]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 05:39:40 serverd sudo[9370]: pam_unix(sudo:session): session closed for user root
+Mar  1 05:39:40 serverd sshd[9129]: pam_unix(sshd:session): session closed for user devops
+Mar  1 05:40:09 serverd sshd[9388]: Accepted publickey for devops from 172.25.250.9 port 44704 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 05:40:09 serverd systemd[9392]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:40:09 serverd sshd[9388]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:41:09 serverd sshd[9401]: Received disconnect from 172.25.250.9 port 44704:11: disconnected by user
+Mar  1 05:41:09 serverd sshd[9401]: Disconnected from user devops 172.25.250.9 port 44704
+Mar  1 05:41:09 serverd sshd[9388]: pam_unix(sshd:session): session closed for user devops
+Mar  1 05:41:38 serverd sshd[9523]: Accepted publickey for devops from 172.25.250.9 port 44706 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 05:41:38 serverd systemd[9527]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:41:38 serverd sshd[9523]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:42:25 serverd sshd[9657]: Accepted publickey for devops from 172.25.250.9 port 44708 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 05:42:25 serverd sshd[9657]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:42:27 serverd sshd[9657]: pam_unix(sshd:session): session closed for user devops
+Mar  1 05:43:33 serverd sshd[9536]: Received disconnect from 172.25.250.9 port 44706:11: disconnected by user
+Mar  1 05:43:33 serverd sshd[9536]: Disconnected from user devops 172.25.250.9 port 44706
+Mar  1 05:43:33 serverd sshd[9523]: pam_unix(sshd:session): session closed for user devops
+Mar  1 05:50:20 serverd sshd[10023]: Accepted publickey for devops from 172.25.250.9 port 44710 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 05:50:20 serverd systemd[10027]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:50:20 serverd sshd[10023]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:50:22 serverd sshd[10023]: pam_unix(sshd:session): session closed for user devops
+Mar  1 05:51:42 serverd sshd[10283]: Accepted publickey for devops from 172.25.250.9 port 44712 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 05:51:42 serverd systemd[10287]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:51:42 serverd sshd[10283]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:52:42 serverd sshd[10296]: Received disconnect from 172.25.250.9 port 44712:11: disconnected by user
+Mar  1 05:52:42 serverd sshd[10296]: Disconnected from user devops 172.25.250.9 port 44712
+Mar  1 05:52:42 serverd sshd[10283]: pam_unix(sshd:session): session closed for user devops
+Mar  1 05:53:27 serverd sshd[10418]: Accepted publickey for devops from 172.25.250.9 port 44714 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 05:53:27 serverd systemd[10422]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:53:27 serverd sshd[10418]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:53:29 serverd sshd[10580]: Accepted publickey for devops from 172.25.250.9 port 44716 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 05:53:29 serverd sshd[10580]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:53:29 serverd sshd[10583]: Received disconnect from 172.25.250.9 port 44716:11: disconnected by user
+Mar  1 05:53:29 serverd sshd[10583]: Disconnected from user devops 172.25.250.9 port 44716
+Mar  1 05:53:29 serverd sshd[10580]: pam_unix(sshd:session): session closed for user devops
+Mar  1 05:53:29 serverd sshd[10418]: pam_unix(sshd:session): session closed for user devops
+Mar  1 05:53:36 serverd sshd[10598]: Accepted publickey for devops from 172.25.250.9 port 44718 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 05:53:36 serverd sshd[10598]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:54:37 serverd sshd[10601]: Received disconnect from 172.25.250.9 port 44718:11: disconnected by user
+Mar  1 05:54:37 serverd sshd[10601]: Disconnected from user devops 172.25.250.9 port 44718
+Mar  1 05:54:37 serverd sshd[10598]: pam_unix(sshd:session): session closed for user devops
+Mar  1 05:58:23 serverd sshd[10723]: Accepted publickey for devops from 172.25.250.9 port 44720 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 05:58:23 serverd systemd[10727]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:58:23 serverd sshd[10723]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:58:24 serverd sshd[10723]: pam_unix(sshd:session): session closed for user devops
+Mar  1 05:58:51 serverd sshd[10888]: Accepted publickey for devops from 172.25.250.9 port 44722 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 05:58:51 serverd systemd[10892]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:58:51 serverd sshd[10888]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:58:54 serverd sshd[10888]: pam_unix(sshd:session): session closed for user devops
+Mar  1 05:59:28 serverd sshd[11187]: Accepted publickey for devops from 172.25.250.9 port 44724 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Mar  1 05:59:28 serverd systemd[11191]: pam_unix(systemd-user:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:59:29 serverd sshd[11187]: pam_unix(sshd:session): session opened for user devops(uid=1001) by (uid=0)
+Mar  1 05:59:29 serverd sudo[11305]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-lhjtffllfdawsvxrhvviccwoozvvxyaz ; /usr/bin/python3 /home/devops/.ansible/tmp/ansible-tmp-1677668369.0830688-25-49959640879758/AnsiballZ_setup.py
+Mar  1 05:59:29 serverd sudo[11305]: pam_unix(sudo:session): session opened for user root(uid=0) by devops(uid=1001)
+Mar  1 05:59:30 serverd sudo[11305]: pam_unix(sudo:session): session closed for user root

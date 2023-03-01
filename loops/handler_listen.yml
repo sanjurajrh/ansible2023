@@ -1,0 +1,30 @@
+---
+- name: Handler
+  hosts: serverc.lab.example.com
+  become: true
+  tasks:
+    - name: Install the package
+      notify: 
+        - Restart apache
+        - firewall opening port 
+      ansible.builtin.dnf:
+        name: httpd
+        state: latest
+      register: pkg_status
+    - name: Content to serve
+      ansible.builtin.copy:
+        content: "Example web content"
+        dest: /var/www/html/index.html
+      notify:
+        - uninstall package
+  handlers:
+    - name: uninstall package
+      ansible.builtin.dnf:
+        name: httpd
+        state: absent
+    - name: Restart apache
+      ansible.builtin.service:
+        name: httpd
+        state: restarted
+        enabled: true
+

@@ -1,0 +1,37 @@
+---
+- name: Using block 
+  hosts: all
+  become: true
+  tasks:
+    - block:
+      - name: Custom message
+        ansible.builtin.debug:
+          msg: "Web server deployed started"
+    - block:
+      when: ansible_facts['distribution'] == "RedHat"
+      - name: Install the required package
+        ansible.builtin.dnf:
+          name: httpd
+          state: latest
+
+      - name: Serve contents from local file
+        ansible.builtin.copy:
+          src: issue.txt
+          dest: /var/www/html/index.html
+
+      - name: Update the httpd service
+        ansible.builtin.service:
+          name: httpd
+          state: started
+          enabled: true
+
+      - name: Firewall ports
+        ansible.posix.firewalld:
+          service: http
+          immediate: true
+          permanent: true
+          state: enabled
+    - block:
+      - name: Custom message
+        ansible.builtin.debug:
+          msg: "Web server deployed successfully"

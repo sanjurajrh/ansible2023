@@ -1,0 +1,15 @@
+---
+- name: Create the file with permissions
+  hosts: serverd.lab.example.com
+  become: true
+  tasks:
+    - name: Create a directory /etc/myfiles
+      ansible.builtin.file:
+        path: /etc/myfiles
+        recurse: true
+        mode: 0755
+        owner: root
+        group: root
+        setype: samba_share_t
+        state: directory
+        

@@ -1,0 +1,9 @@
+---
+- name: Add text to test file
+  hosts: server
+  tasks:
+    - name: Add a single line of text to the file
+      ansible.builtin.lineinfile:
+        path: /tmp/test123
+        line: Welcome to Red Hat Training
+        state: present

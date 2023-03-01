@@ -1,0 +1,21 @@
+---
+- name: Verify the package exists
+  hosts: all
+  become: true
+  tasks:
+    - name: Check the package presence
+      ansible.builtin.command: rpm -qa vsftpd
+      register: pkg_status
+
+    - name: Print the pkg is installed
+      ansible.builtin.debug:
+        msg: "Package exists"
+      when: pkg_status['stdout'] != ""
+
+    - name: Install the pkg if not present
+      when: pkg_status.stdout is defined
+      ansible.builtin.dnf:
+        name: vsftpd
+        state: latest
+
+        

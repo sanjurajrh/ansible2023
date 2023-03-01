@@ -1,0 +1,9 @@
+[rhel8]
+serverc.lab.example.com
+
+[rhel9]
+serverd.lab.example.com
+
+[rhel:children]
+rhel8
+rhel9
